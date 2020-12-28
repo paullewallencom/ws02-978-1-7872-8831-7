@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="My1stProxyConsumer" startOnLoad="true" transports="jms" xmlns="http://ws.apache.org/ns/synapse">
+ <proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="My1stProxyConsumer"
+       startOnLoad="true"
+       statistics="enable"
+       trace="enable"
+       transports="jms">
+   <target inSequence="InJMSSequence"/>
+   <parameter name="transport.jms.Destination">My1stQueue</parameter>
+   <parameter name="transport.jms.ContentType">
+      <rules xmlns="">
+         <jmsProperty>contentType</jmsProperty>
+         <default>application/soap+xml</default>
+      </rules>
+   </parameter>
+   <description/>
+</proxy>
+                                

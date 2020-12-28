@@ -1,0 +1,25 @@
+<data name="My1stDataService" serviceNamespace="http://www.my1stdataservice.com" transports="http https local">
+    <config id="MySQL">
+        <property name="carbon_datasource_name">MySQLWorld</property>
+    </config>
+    <query id="citiesXML" useConfig="MySQL">
+        <sql>SELECT ID, Name, CountryCode, District, Population from city</sql>
+        <result element="Cities" rowName="City">
+            <element column="ID" name="CityID" xsdType="string"/>
+            <element column="Name" name="CityName" xsdType="string"/>
+            <element column="CountryCode" name="CountryCode" xsdType="string"/>
+            <element column="District" name="District" xsdType="string"/>
+            <element column="Population" name="Population" xsdType="string"/>
+        </result>
+    </query>
+    <query id="citiesJSON" useConfig="MySQL">
+        <sql>SELECT ID, Name, CountryCode, District, Population from city</sql>
+        <result useColumnNumbers="true" outputType="json">{"Cities":  {"City":[{"CityID": "$1","CityNAME":"$2","CountryCode": "$3","District": "$4","Population": "$5"}]}}</result>
+    </query>
+    <operation name="citiesXML">
+        <call-query href="citiesXML"/>
+    </operation>
+    <resource method="GET" path="cities">
+        <call-query href="citiesJSON"/>
+    </resource>
+</data>

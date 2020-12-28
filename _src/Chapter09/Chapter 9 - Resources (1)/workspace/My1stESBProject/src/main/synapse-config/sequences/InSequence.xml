@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="InSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="MyProperty" scope="default" type="STRING" value="This is a property value"/>
+    <log level="custom">
+        <property name="flow" value="step 1"/>
+        <property expression="//myGreeting" name="greetingReceived" xmlns:ns="http://org.apache.synapse/xsd"/>
+        <property expression="get-property('MyProperty')" name="MyProperty" xmlns:ns="http://org.apache.synapse/xsd"/>
+    </log>
+    <script language="js"><![CDATA[var log = mc.getServiceLog();        
+    log.info("Logging inside Script Mediator");]]></script>
+    <payloadFactory description="change message" media-type="xml">
+        <format>
+            <response xmlns="">
+                <message>Fine thanks!</message>
+            </response>
+        </format>
+        <args/>
+    </payloadFactory>
+    <respond description="respond"/>
+</sequence>

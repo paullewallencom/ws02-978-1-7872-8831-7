@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="WSO2 Enterprise Integrator 6.0.0" location\="C\:/wso2/servers/wso2ei/6.0.0/wso2ei-6.0.0" name\="WSO2 Enterprise Integrator 6.0.0" runtime-type-id\="org.wso2.developerstudio.eclipse.carbon.runtime44ei" server_definition_id\="org.wso2.developerstudio.eclipse.carbon.runtime44ei" timestamp\="0">\r\n    <map carbon.home\="C\:/wso2/servers/wso2ei/6.0.0/wso2ei-6.0.0" key\="generic_server_instance_properties" server.name\="WSO2 Enterprise Integrator 6.0.0"/>\r\n  </runtime>\r\n</runtimes>\r\n

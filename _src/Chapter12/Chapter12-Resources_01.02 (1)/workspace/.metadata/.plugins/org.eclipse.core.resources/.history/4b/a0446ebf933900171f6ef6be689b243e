@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="InJMSSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full"/>
+    <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+    <send>
+        <endpoint>
+            <address uri="http://localhost:8280/services/My1stDataService"/>
+        </endpoint>
+    </send>
+</sequence>

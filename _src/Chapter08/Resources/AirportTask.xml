@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task class="org.wso2.tasks.AirportTask" group="synapse.simple.quartz" name="AirportTask" xmlns="http://ws.apache.org/ns/synapse">
+    <trigger once="true"/>
+    <property name="City" value="Seville" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+    <property name="IATAcode" value="SVQ" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+    <property name="OACIcode" value="LEZL" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
+    <property name="Arrivals" xmlns:task="http://www.wso2.org/products/wso2commons/tasks">
+        <Arrivals xmlns="">
+            <Arrival>
+                <flight>FR 8363</flight>
+                <airline>Ryanair</airline>
+                <origin>(STN) London</origin>
+                <time>4:15 PM</time>
+                <status>Landed</status>
+            </Arrival>
+            <Arrival>
+                <flight>IB 5165</flight>
+                <airline>Iberia</airline>
+                <origin>(LYS) Lyon</origin>
+                <time>9:45 PM</time>
+                <status>Route</status>
+            </Arrival>
+        </Arrivals>
+    </property>
+</task>

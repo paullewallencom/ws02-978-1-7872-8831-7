@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="InQueueSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full"/>
+    <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+    <property name="FORCE_SC_ACCEPTED" scope="axis2" type="STRING" value="true"/>
+    <send>
+        <endpoint>
+            <address uri="jms:/My1stQueue?transport.jms.ConnectionFactoryJNDIName=QueueConnectionFactory&amp;java.naming.factory.initial=org.wso2.andes.jndi.PropertiesFileInitialContextFactory&amp;java.naming.provider.url=conf/jndi.properties&amp;transport.jms.DestinationType=queue"/>
+        </endpoint>
+    </send>
+</sequence>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server hostname="localhost" id="WSO2 Enterprise Integrator 6.0.0 at localhost" name="WSO2 Enterprise Integrator 6.0.0 at localhost" runtime-id="WSO2 Enterprise Integrator 6.0.0" server-type="org.wso2.developerstudio.eclipse.carbon.server44ei" server-type-id="org.wso2.developerstudio.eclipse.carbon.server44ei" start-timeout="600" stop-timeout="15" timestamp="2">
+    <map carbon.browser="true" carbon.debug="5001" carbon.hotupdate="true" carbon.http="9763" carbon.https="9443" carbon.offset="0" key="generic_server_instance_properties" osgi.console="false" synapse.transport.http="8280" synapse.transport.https="8243"/>
+    <list key="modules"/>
+    <list key="Generic_Server_Modules_List"/>
+  </server>
+</servers>

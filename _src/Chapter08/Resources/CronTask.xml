@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task class="org.apache.synapse.startup.tasks.MessageInjector" group="synapse.simple.quartz" name="CronTask" xmlns="http://ws.apache.org/ns/synapse">
+    <trigger cron="0 30 1 * * ?"/>
+</task>

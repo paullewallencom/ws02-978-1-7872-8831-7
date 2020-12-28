@@ -1,0 +1,9 @@
+<data name="My1stDataServiceProject" serviceNamespace="asdf" serviceGroup="">
+    <description/>
+    <config id="">
+        <property name="org.wso2.ws.dataservice.user">null</property>
+        <property name="org.wso2.ws.dataservice.password">null</property>
+        <property name="org.wso2.ws.dataservice.protocol">null</property>
+        <property name="org.wso2.ws.dataservice.driver">null</property>
+    </config>
+</data>

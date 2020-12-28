@@ -1,0 +1,9 @@
+2017-03-12 22:19:37,727 [Worker-245] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\wso2\workspace\My1stCompositeApplication
+2017-03-12 22:19:37,734 [Worker-245] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2017-03-12 22:22:11,209 [Worker-228] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\wso2\workspace\MavenParentProject1
+2017-03-12 22:22:11,210 [Worker-228] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2017-03-12 22:25:51,902 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-03-12 22:25:55,999 [Worker-242] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\wso2\workspace\My1stESBSolution
+2017-03-12 22:25:56,000 [Worker-242] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B 
+2017-03-12 22:29:03,292 [Worker-251] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\wso2\workspace\My1stESBProject
+2017-03-12 22:29:03,292 [Worker-251] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install

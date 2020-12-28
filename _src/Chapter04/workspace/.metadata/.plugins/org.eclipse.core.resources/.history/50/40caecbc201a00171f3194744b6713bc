@@ -1,0 +1,12 @@
+<data name="My1stDataService" serviceNamespace="http://www.my1stdataservice.com" transports="http https local">
+    <config id="MySQL">
+        <property name="carbon_datasource_name">MySQLWorld</property>
+    </config>
+    <query id="citiesJSON" useConfig="MySQL">
+        <sql>SELECT ID, Name, CountryCode, District, Population from city</sql>
+        <result useColumnNumbers="true" outputType="json">{"Cities":{"City":[{"CityID": "$1","CityNAME":"$2","CountryCode": "$3","District": "$4","Population": "$5"}]}}</result>
+    </query>
+    <resource method="GET" path="cities">
+        <call-query href="citiesJSON"/>
+    </resource>
+</data>
